@@ -1,0 +1,79 @@
+{% extends '../base.html' %}
+{% block styles_area %}
+<style type="text/css">
+  label.control-sm-2{
+    width: 12%;
+    margin-right: 5px;
+  }
+  .control-sm-10 {
+    display: inline-block;
+    width: 75%;
+  }
+
+</style>
+{% end %}
+{% block main_content %}
+   <div class="box box-danger">
+        <div class="box-header with-border">
+          <h3 class="box-title">用户信息</h3>
+
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <!--<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>-->
+          </div>
+        </div>
+        <!-- /.box-header -->
+     <form class="form-horizontal">
+       <div class="box-body">
+         <div class="row">
+           <div class="col-md-6">
+             <div class="form-group has-error">
+               <label class="control-sm-2 control-label" >姓名:</label>
+               <div class="control-sm-10">
+                 <input type="text" class="form-control"
+                        data-toggle="tooltip" data-placement="top" title="" />
+               </div>
+             </div>
+             <!-- /.form-group -->
+             <div class="form-group ">
+               <label  class="control-sm-2 control-label" >邮件:</label>
+               <div class="control-sm-10">
+                  <input type="email" class="form-control"
+                         data-toggle="tooltip" data-placement="top" title="something is wrong"/>
+               </div>
+             </div>
+             <!-- /.form-group -->
+           </div>
+           <!-- /.col -->
+           <div class="col-md-6">
+             <div class="form-group">
+               <label class="control-sm-2 control-label">职位:</label>
+               <div class="control-sm-10">
+                 <select class="form-control select2" multiple="multiple" data-placeholder="选择职位多选" style="width: 100%;" >
+                   <option>Alabama</option>
+                   <option>Alaska</option>
+                   <option>California</option>
+                   <option>Delaware</option>
+                   <option>Tennessee</option>
+                   <option>Texas</option>
+                   <option>Washington</option>
+                 </select>
+               </div>
+             </div>
+             <!-- /.form-group -->
+             <div class="form-group">
+               <label class="control-sm-2 control-label">密码:</label>
+               <div class="control-sm-10">
+                  <input type="password" class="form-control" style="width:100%"/>
+               </div>
+             </div>
+             <!-- /.form-group -->
+             <!-- /.col -->
+           </div>
+           <!-- /.row -->
+         </div>
+       </div>
+     </form>
+      </div>
+{% end %}
+
